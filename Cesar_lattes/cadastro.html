@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+	body {
+		background-color: white;
+		margin: 0;
+		padding: 0;
+		font-family: Arial, sans-serif;
+	}
+
+	.caixatexto1{
+		width: 40%;
+		height:20%;
+		background-color: transparent;
+		text-align: ;
+		margin-left: 30px;
+		font-family: Montserrat, sans-serif;
+		font-size: 26px;
+	}
+
+	.container {
+		background-color: #fff;
+		max-width: 350px;
+		margin: 100px auto;
+		padding: 20px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		font-family: Montserrat, sans-serif;
+		display: block;
+		justify-content: center;
+	}
+
+	h1{
+		color:black;
+		margin-left: 10px;
+	}
+
+	h2 {
+		margin-top: 0;
+		text-align: center;
+	}
+
+	form {
+		margin-top: 20px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="e-mail"] {
+		width: 95%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: none;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	}
+
+	a:link{
+		color: blue;
+	}
+
+	a:hover{
+		color: #54DAFC;
+	}
+
+	button[type="submit"] {
+		background-color: #B9F1FF;
+		color: black;
+		width: 100%;
+		padding: 10px 20px;
+		border: none;
+		cursor: pointer;
+		font-family: Montserrat, sans-serif;
+	}
+
+	.button-link {
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+	}
+</style>
+<body>
+	<div class="caixatexto1">
+		<table>
+			<tr>
+				<td width="32%" style="background-image: url(cesarlogo.png); background-size: 70% 60%; background-repeat: no-repeat; background-position: center;"></td>
+				<td><p>César Lattes</p></td>
+			</tr>
+		</table>
+	</div>
+	<div class="container">
+		<h2>Tela de Cadastro</h2>
+		<form action="entrar.html">
+			<label for="name">Nome:</label>
+			<input type="text" id="name" name="name" required placeholder="Digite seu nome">
+
+			<label for="e-mail">E-mail:</label>
+			<input type="e-mail" id="e-mail" name="e-mail" required placeholder="Digite seu e-mail">
+
+			<label for="password">Senha:</label>
+			<input type="password" id="password" name="password" required placeholder="Digite sua senha">
+
+			<label for="confirm-password">Confirme a senha:</label>
+			<input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirme sua senha">
+			
+			<button type="submit">Cadastrar</button>
+		</form>
+		<br>
+		<hr width="100%">
+
+		<div class="button-link">
+			<p>Já possui uma conta? <a href="entrar.html">Faça login aqui.</a></p>
+		</div>
+	</div>
+</body>
+</html>

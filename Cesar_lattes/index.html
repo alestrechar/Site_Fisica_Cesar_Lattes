@@ -1,0 +1,471 @@
+<html>
+<head>
+	<title>César Lattes</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+	<style>
+		body{
+			background-color: #F0F3F4;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			width:100%;
+			height:11.5%;
+			background-color: white;
+		}
+		nav{
+			width:100%;
+			height:7%;
+			background-color: #E0FFFF;
+		}
+		main{
+			width:100%;
+			height: 405%;
+			background-color: white;
+			text-align: center;
+		}
+		footer{
+			width:100%;
+			height:50%;
+			background-color: white;
+		}
+
+		/*header*/
+		.container-pai{
+			position: relative;
+			display: flex;
+			background-color: transparent;
+			width: 100%;
+			height: 100%;
+			align-items: center;
+		}
+		.caixaitem1 {
+			position: relative;
+			width: 5%;
+			height: 100%;
+			background-color: transparent;
+			background-image: url("cesarlogo.png");
+			background-size: 65% 55%;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-left: 21%;
+		}
+		.caixaitem2 {
+			position: relative;
+			width: 11%;
+			height: 100%;
+			background-color: transparent;
+			font-family: Montserrat, sans-serif;
+			font-size: 26px;
+			margin-left: 0%;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.buttoncadastrar{
+			position: relative;
+			display: inline-flex;
+			background-color: transparent;
+			color: black;
+			width: 7%;
+			height: 60%;
+			text-decoration: none;
+			font-size: 14px;
+			font-family: Montserrat, sans-serif;
+			border: none;
+			align-items: center;
+			justify-content: center;
+			background-image: url("cadastrar.png");
+			background-size: 15px 15px;
+			background-repeat: no-repeat;
+			background-position: left;
+			margin-left: 29%;
+		}
+		.buttoncadastrar:hover{
+			text-decoration: underline;
+		}
+		.buttonentrar{
+			position: relative;
+			display: inline-flex;
+			background-color: transparent;
+			color: black;
+			width: 5%;
+			height: 60%;
+			text-decoration: none;
+			font-size: 14px;
+			font-family: Montserrat, sans-serif;
+			border: none;
+			align-items: center;
+			justify-content: center;
+			background-image: url("usuario.png");
+			background-size: 17px 17px;
+			background-repeat: no-repeat;
+			background-position: left;
+			margin-left: 0.5%;
+		}
+		.buttonentrar:hover {
+			text-decoration: underline;
+		}
+		/*navbar*/
+		.buttonnav {
+		    text-align: center;
+		    margin-bottom: 20px;
+		}
+		.buttonnav a {
+			display: inline-flex;
+		   	width: 11%;
+		   	height: 100%;
+		   	margin: 0px -2px;
+		    background-color: #E0FFFF;
+		    color: black;
+		    text-decoration: none;
+		    border: none;
+		    align-items: center;
+		    justify-content: center;
+		    font-family: Montserrat, sans-serif;
+		    font-size: 15px;
+		}
+		.buttonnav a:hover {
+			background-color: #B9F1FF;
+		}
+
+		/*main*/
+		.carrosel{
+			margin-bottom: 20px;
+		    background-color: transparent;
+		    width: 100%;
+		    display: inline-block;
+		    align-items: center;
+		}
+		.carrosel .iframeslide {
+			width: 100%;
+		    height: 11%;
+		    border: none;
+		}
+		.content1 {
+		    margin-bottom: 20px;
+		    background-color: transparent;
+		    width: 55%;
+		    display: inline-block;
+		    text-align: center;
+		    font-family: Montserrat, sans-serif;
+		    font-weight: lighter;
+		    font-size: 25px;
+		}
+		.content2 {
+		    margin-bottom: 20px;
+		    background-color: transparent;
+		    width: 55%;
+		    display: inline-block;
+		    text-align: center;
+		    font-family: Montserrat, sans-serif;
+		    font-weight: lighter;
+		    font-size: 25px;
+		}
+		.content3 {
+		    margin-bottom: 20px;
+		    background-color: transparent;
+		    width: 55%;
+		    display: inline-block;
+		    text-align: center;
+		    font-family: Montserrat, sans-serif;
+		    font-weight: lighter;
+		    font-size: 25px;
+		}
+		.content4 {
+		    margin-bottom: 20px;
+		    background-color: transparent;
+		    width: 55%;
+		    display: inline-block;
+		    text-align: center;
+		    font-family: Montserrat, sans-serif;
+		    font-weight: lighter;
+		    font-size: 25px;
+		}
+
+		.content1 .iframe1 {
+		    width: 100%;
+		    height: 550px;
+		    border: none;
+		}
+		.content2 .iframe2 {
+		    width: 100%;
+		    height: 550px;
+		    border: none;
+		}
+		.content3 .iframe3 {
+		    width: 100%;
+		    height: 500px;
+		    border: none;
+		}
+		.content4 .iframe4 {
+		    width: 100%;
+		    height: 600px;
+		    border: none;
+		}
+		.contentiframe h2 {
+		    margin-top: 0;
+		}
+		.botaovoltar{
+			display: flex;
+		   	width: 2.5%;
+		   	height: 2%;
+		    background-color: transparent;
+		    border: none;
+		    background-image: url("botaovoltar.png");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 35px 35px;
+		    margin-left: 74%;
+		}
+
+		/*footer*/
+		.container1{
+			background-color: #F4F4F4;
+			width: 100%;
+			height: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.caixabranca{
+			position: relative;
+			background-color: white;
+			width: 68%;
+			color: black;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			display: inline-flex;
+			justify-content:;
+			align-items: center;
+			box-shadow: 1.5px 1.5px 0px 0px rgba(0,0,0,0.05);
+		}
+		.caixatexto1referencias{
+			background-color: transparent;
+			width: 45%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			text-align: center;
+			margin-left: 4.5%;
+		}
+		.caixatexto2referencias{
+			background-color: transparent;
+			width: 32%;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			text-align: center;
+			margin-left: %;
+		}
+		.fontredes{
+			font-family: Montserrat, sans-serif;
+			font-size: 24px;
+			font-weight: lighter;
+			margin-left: 55px;
+		}
+
+		.container2 {
+			background-color: #FFFFFF;
+			width: 100%;
+			height: 50%;
+			display: flex;
+			justify-content: center;
+		}
+		.caixaitemfooter1 {
+			background-color: transparent;
+			width:17%;
+			height:100%;
+			display: flex;
+			justify-content: right;
+		}
+		.caixaitemfooter2 {
+			background-color: transparent;
+			width:45%;
+			height:100%;
+			margin-left: 10px;
+		}
+		.caixaitemfooter3 {
+			background-color: transparent;
+			width:7%;
+			height:100%;
+			display: flex;
+			justify-content: center;
+		}
+		.imglogofooter {
+			position: relative;
+			width: 25%;
+			height: 37%;
+			background-color: transparent;
+			background-image: url("cesarlogo.png");
+			background-size: 65% 55%;
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-top: 10px;
+		}
+		.textologofooter {
+			position: relative;
+			width: 67%;
+			height: 37%;
+			background-color: transparent;
+			font-family: Montserrat, sans-serif;
+			font-size: 20px;
+			margin-top: 10px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.caixatitulofooter {
+			background-color: transparent;
+			font-family: Montserrat, sans-serif;
+			font-size: 14px;
+			color: black;
+			width:22%;
+			height:15%;
+			display: flex;
+			align-items: center;
+			margin-left:30px;
+			margin-top: 15px;
+		}
+		.caixatextofooter1 {
+			background-color: transparent;
+			font-family: Montserrat, sans-serif;
+			font-size: 11px;
+			color: black;
+			display: flex;
+			width:92%;
+			height:70%;
+			text-align: justify;
+			align-items: center;
+			margin-left: 30px;
+			margin-top: px;
+		}
+		.buttonfooter{
+			position: relative;
+			display: inline-flex;
+			background-color: transparent;
+			color: black;
+			width: 100%;
+			height: 15%;
+			text-decoration: none;
+			font-size: 13px;
+			font-family: Montserrat, sans-serif;
+			border: none;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			margin-top: 12px;
+		}
+		.buttonfooter:hover {
+			text-decoration: underline;
+		}
+	</style>
+<body>
+	<a name="voltar"> </a>
+	<header>
+		<div class="container-pai">
+			<div class="caixaitem1"> </div>
+			<div class="caixaitem2">
+				César Lattes
+			</div>
+			<a class="buttoncadastrar" href="cadastro.html">
+				Cadastre-se
+			</a>
+			<a class="buttonentrar" href="entrar.html">
+				Entrar
+			</a>
+		</div>
+	</header>
+	<nav>
+		<div class="buttonnav">
+		    <a href="#botao1">SOBRE</a>
+		    <a href="#botao2">ÁREA DE ATUAÇÃO</a>
+		    <a href="#botao3">TRABALHOS</a>
+		    <a href="#botao4">PRÊMIOS</a>
+		</div>
+	</nav>
+	<main>
+		<div class="carrosel">
+			<iframe class="iframeslide" src="carrosel.html"></iframe>
+		</div>
+		<br><br>
+		<div class="content1">
+      		<p id="botao1">Sobre</p>
+      		<iframe class="iframe1" src="sobre.html"></iframe>
+    	</div>
+    	<a class="botaovoltar" href="#voltar"> </a>
+    	<hr width="58%">
+    	<br>
+    	<div class="content2">
+      		<p id="botao2">Área de atuação</p>
+      		<iframe class="iframe2" src="area_atuacao.html"></iframe>
+    	</div>
+    	<a class="botaovoltar" href="#voltar"> </a>
+    	<hr width="58%">
+    	<br>
+    	<div class="content3">
+      		<p id="botao3">Trabalhos Científicos</p>
+      		<iframe class="iframe3" src="trabalhos.html"></iframe>
+    	</div>
+    	<a class="botaovoltar" href="#voltar"> </a>
+    	<hr width="58%">
+    	<br>
+    	<div class="content4">
+      		<p id="botao4">Prêmios</p>
+      		<iframe class="iframe4" src="premios.html"></iframe>
+    	</div>
+    	<a class="botaovoltar" href="#voltar"> </a>
+    	<hr width="58%">
+    	
+	</main>
+	<footer>
+		<div class="container1">
+			<div class="caixabranca">
+				<font class="fontredes">
+					Referências: 
+				</font>
+				<div class="caixatexto1referencias">
+					<a href="https://unifei.edu.br/personalidades-do-muro/extensao/cesar-lattes/">
+						https://unifei.edu.br/personalidades-do-muro/extensao/cesar-lattes/
+					</a>
+				</div>
+					&
+				<div class="caixatexto2referencias">
+					<a href="https://www.estudarfora.org.br/cesar-lattes/">
+						https://www.estudarfora.org.br/cesar-lattes/
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container2">
+			<div class="caixaitemfooter1">
+				<div class="imglogofooter"> </div>
+				<div class="textologofooter"> 
+					César Lattes
+				</div>
+			</div>
+			<div class="caixaitemfooter2">
+				<div class="caixatitulofooter">
+					Políticas de Privacidade
+				</div>
+				<div class="caixatextofooter1">
+					-Coletamos informações pessoais apenas quando você as fornece voluntariamente, e utilizamos essas informações para responder às suas solicitações e melhorar sua experiência no site.
+					<br>
+					-Não compartilhamos suas informações com terceiros, exceto quando necessário para atender às suas solicitações ou cumprir obrigações legais. 
+					<br>
+					-Tomamos medidas para proteger suas informações, mas lembre-se de que nenhum método de transmissão pela internet é 100% seguro. 
+					<br>
+					-Utilizamos cookies para melhorar a sua navegação, mas você pode configurar seu navegador para recusá-los. Nosso site pode conter links para sites de terceiros, e não nos responsabilizamos por suas políticas de privacidade. 
+					<br>
+					-Esta política pode ser atualizada periodicamente. 
+					<br>
+					-Para mais informações, entre em contato conosco.
+				</div>
+			</div>
+			<div class="caixaitemfooter3">
+				<a class="buttonfooter"  href="#voltar">Voltar ao topo &#9650;</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
